@@ -77,7 +77,7 @@ const Shape: React.FC<Props> = (props: Props) => {
       colorCubeFace(faceIndex, 0);
       setSelectedFaceIndex(-1);
     } else {
-      colorCubeFace(faceIndex, 1);
+      colorCubeFace(faceIndex, 0.1);
 
       // Precaution to clear all the other faces.
       for (let i = 0; i < 6; i++) {
