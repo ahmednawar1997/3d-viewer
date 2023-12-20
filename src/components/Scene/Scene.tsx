@@ -1,12 +1,12 @@
 import { useThree } from '@react-three/fiber';
 import Shape from '../Shape/Shape';
 import defaultShapes from '../../helpers/Shapes';
-import { OrbitControls, OrbitControlsChangeEvent } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 import { useEffect, useState } from 'react';
-import { useShapeStore } from '../../stores/shapeStore';
+import { useShapeStore } from '../../stores/ShapeStore';
 
 function Scene() {
-  const [shapes, setShapes] = useState(defaultShapes);
+  const [shapes] = useState(defaultShapes);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const { setDimensions } = useShapeStore();
 

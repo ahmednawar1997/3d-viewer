@@ -1,0 +1,8 @@
+.dimensions{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+}
