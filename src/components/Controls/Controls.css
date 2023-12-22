@@ -4,8 +4,11 @@
   position: absolute;
   top: 50px;
   left: 50px;
-  width: 100px;
   background: rgba(255, 255, 255, 0.2);
   padding: 20px;
   border-radius: 10px;
+  z-index: 2;
+}
+.shape-title{
+  margin-bottom: 5px;
 }

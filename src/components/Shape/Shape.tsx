@@ -8,7 +8,6 @@ export type ShapeProps = ThreeElements['mesh'] & {
   width?: number;
   length?: number;
   depth?: number;
-  color: string;
   isRotating?: boolean;
 };
 
@@ -19,8 +18,8 @@ type CanvasEvents = {
 type Props = ShapeProps & CanvasEvents;
 
 const Shape: React.FC<Props> = (props: Props) => {
-  const { color, isRotating, mousePos } = props;
-  const { dimensions } = useShapeStore();
+  const { isRotating, mousePos } = props;
+  const { dimensions, color } = useShapeStore();
 
   const ref = useRef<THREE.Mesh>(null!);
   const geometryRef = useRef<THREE.BoxGeometry>(null!);
